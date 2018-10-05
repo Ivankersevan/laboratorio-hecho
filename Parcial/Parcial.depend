@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538690422 source:/home/alumno/Escritorio/MiGit/laboratorio-hecho-master/Pantalla/Parcial/Parcial/main.c
+	<stdio.h>
+	<stdlib.h>
+
