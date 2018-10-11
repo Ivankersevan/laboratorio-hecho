@@ -4,6 +4,7 @@
 #include "utn.h"
 #include "library.h"
 
+
 void setStatus(cliente clienteArray[],int arrayLenght,int value)
 {
     int i;
@@ -13,9 +14,20 @@ void setStatus(cliente clienteArray[],int arrayLenght,int value)
     }
 }
 
+int findclienteByCuit(cliente clienteArray[],int arrayLenght,int cuit)
+{
+    int i;
+    for(i=0;i < arrayLenght; i++)
+    {
+        if(clienteArray[i].cuit == cuit && clienteArray[i].status == 1)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
 
-
-int findClienteByCode(cliente clienteArray[],int arrayLenght,int id)
+int findclienteById(cliente clienteArray[],int arrayLenght,int id)
 {
     int i;
     for(i=0;i < arrayLenght; i++)
